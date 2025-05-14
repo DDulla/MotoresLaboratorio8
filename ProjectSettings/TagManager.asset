@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Shape
   - Color
+  - Coin
+  - Heart
+  - Enemy
   layers:
   - Default
   - TransparentFX
