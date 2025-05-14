@@ -7,6 +7,10 @@ public class SceneLoader : MonoBehaviour
     {
         SceneManager.LoadScene("Game1");
     }
+    public void LoadGame2()
+    {
+        SceneManager.LoadScene("Game2");
+    }
 
     public void LoadMenu()
     {

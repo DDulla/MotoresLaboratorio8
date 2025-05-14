@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -42,9 +43,10 @@ public class GameManager : MonoBehaviour
 
     public void CheckWin()
     {
-        if (playerCoins >= 10) 
+        if (playerCoins >= 2) 
         {
             OnWin?.Invoke();
+            SceneManager.LoadScene("Menu");
         }
     }
 
@@ -53,6 +55,7 @@ public class GameManager : MonoBehaviour
         if (playerLife <= 0)
         {
             OnLose?.Invoke();
+            SceneManager.LoadScene("Menu");
         }
     }
 }

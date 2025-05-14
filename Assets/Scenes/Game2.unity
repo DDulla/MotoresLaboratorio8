@@ -205,7 +205,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 124082520}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1190405467}
+        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
+        m_MethodName: LoadMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &124082520
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -623,13 +635,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 568014644}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0.05149917, y: -0, z: -0, w: 0.998673}
   m_LocalPosition: {x: 0, y: 1, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 5.904, y: 0, z: 0}
 --- !u!1 &590366862
 GameObject:
   m_ObjectHideFlags: 0
@@ -1867,6 +1879,7 @@ GameObject:
   - component: {fileID: 1190405465}
   - component: {fileID: 1190405464}
   - component: {fileID: 1190405463}
+  - component: {fileID: 1190405467}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1960,6 +1973,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1190405467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1190405462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e60d4cb635e735742b38c6d6dfae1153, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1222427909
 GameObject:
   m_ObjectHideFlags: 0
@@ -3257,7 +3282,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 4
   m_CollisionDetection: 0
 --- !u!114 &1911049420
 MonoBehaviour:
@@ -3272,8 +3297,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pivotPoints:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1233482726}
+  - {fileID: 1759601253}
   speed: 3
   rb: {fileID: 1911049419}
 --- !u!1 &1944430832
