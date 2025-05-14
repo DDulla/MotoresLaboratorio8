@@ -376,7 +376,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: 'Coins: 0'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1228,6 +1228,7 @@ GameObject:
   - component: {fileID: 931802755}
   - component: {fileID: 931802757}
   - component: {fileID: 931802758}
+  - component: {fileID: 931802759}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -1385,11 +1386,35 @@ MonoBehaviour:
     m_ActionId: 73bc471f-9309-4e6c-8b71-60f68b8f84c4
     m_ActionName: Game2/Jump[/Keyboard/space]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1423141080}
+        m_TargetAssemblyTypeName: ColorPowerUpManager, Assembly-CSharp
+        m_MethodName: OnPreviousColor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 2b22d393-f963-431e-861e-9b20db47999b
     m_ActionName: Game2/PreviousColor[/Keyboard/q]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1423141080}
+        m_TargetAssemblyTypeName: ColorPowerUpManager, Assembly-CSharp
+        m_MethodName: OnNextColor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: e70afad0-ee0a-427b-bff7-0e188f24cb42
     m_ActionName: Game2/NextColor[/Keyboard/e]
   m_NeverAutoSwitchControlSchemes: 0
@@ -1450,6 +1475,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   colorData: {fileID: 11400000, guid: ce89dabda94b3084185a66cb17436da4, type: 2}
   meshRenderer: {fileID: 931802752}
+--- !u!114 &931802759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931802750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18649eca131113b458963b7b62c24cc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorData: {fileID: 11400000, guid: ce89dabda94b3084185a66cb17436da4, type: 2}
+  meshRenderer: {fileID: 931802752}
+  colorManager: {fileID: 1423141080}
 --- !u!1 &1049335210
 GameObject:
   m_ObjectHideFlags: 0
@@ -1995,6 +2035,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1222427909}
   m_CullTransparentMesh: 1
+--- !u!1 &1233482725
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1233482726}
+  m_Layer: 0
+  m_Name: Pivot1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1233482726
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1233482725}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -3.87, y: -4.53, z: 6.37}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1423141077
 GameObject:
   m_ObjectHideFlags: 0
@@ -2005,6 +2076,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1423141079}
   - component: {fileID: 1423141078}
+  - component: {fileID: 1423141080}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -2039,6 +2111,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1423141080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1423141077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2196e5ee9b791de428e0023a38dac19e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colors:
+  - {fileID: 11400000, guid: ce89dabda94b3084185a66cb17436da4, type: 2}
+  - {fileID: 11400000, guid: ff92a9a4fe92b8a4db7c31f2427b21bf, type: 2}
+  - {fileID: 11400000, guid: 70fbb6b967e9b8c4c8967fd91ca88ef6, type: 2}
 --- !u!1 &1459634946
 GameObject:
   m_ObjectHideFlags: 0
@@ -2616,6 +2704,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1709082394}
   m_CullTransparentMesh: 1
+--- !u!1 &1759601252
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1759601253}
+  m_Layer: 0
+  m_Name: Pivot2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1759601253
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1759601252}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -7.52, y: -4.53, z: 6.37}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1851632048
 GameObject:
   m_ObjectHideFlags: 0
@@ -2792,7 +2911,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: 'Lives: 10'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2987,6 +3106,9 @@ GameObject:
   - component: {fileID: 1911049414}
   - component: {fileID: 1911049413}
   - component: {fileID: 1911049417}
+  - component: {fileID: 1911049418}
+  - component: {fileID: 1911049420}
+  - component: {fileID: 1911049419}
   m_Layer: 0
   m_Name: Enemy1
   m_TagString: Enemy
@@ -3009,7 +3131,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -3076,7 +3198,7 @@ Transform:
   m_GameObject: {fileID: 1911049412}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.69, y: -4.53, z: 6.37}
+  m_LocalPosition: {x: -5.55, y: -4.53, z: 6.37}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3096,6 +3218,64 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   colorData: {fileID: 11400000, guid: ff92a9a4fe92b8a4db7c31f2427b21bf, type: 2}
   meshRenderer: {fileID: 1911049414}
+--- !u!114 &1911049418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1911049412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cce10b9a894023246b3b96517c933392, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyColor: {fileID: 11400000, guid: ff92a9a4fe92b8a4db7c31f2427b21bf, type: 2}
+  damage: 1
+--- !u!54 &1911049419
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1911049412}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &1911049420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1911049412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5f39d9adbe38694baf1613951cd5943, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pivotPoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  speed: 3
+  rb: {fileID: 1911049419}
 --- !u!1 &1944430832
 GameObject:
   m_ObjectHideFlags: 0
@@ -3380,6 +3560,7 @@ GameObject:
   - component: {fileID: 2070003375}
   - component: {fileID: 2070003374}
   - component: {fileID: 2070003378}
+  - component: {fileID: 2070003379}
   m_Layer: 0
   m_Name: Enemy2
   m_TagString: Enemy
@@ -3402,7 +3583,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -3489,6 +3670,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   colorData: {fileID: 11400000, guid: 70fbb6b967e9b8c4c8967fd91ca88ef6, type: 2}
   meshRenderer: {fileID: 2070003375}
+--- !u!114 &2070003379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2070003373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cce10b9a894023246b3b96517c933392, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyColor: {fileID: 11400000, guid: 70fbb6b967e9b8c4c8967fd91ca88ef6, type: 2}
+  damage: 2
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -3506,5 +3701,7 @@ SceneRoots:
   - {fileID: 1851632052}
   - {fileID: 590366867}
   - {fileID: 682126857}
+  - {fileID: 1233482726}
+  - {fileID: 1759601253}
   - {fileID: 1911049416}
   - {fileID: 2070003377}

@@ -12,6 +12,6 @@ public class LifePanel : MonoBehaviour
 
     private void UpdateLife(int life)
     {
-        lifeText.text = "Vida: " + life;
+        lifeText.text = "Lives: " + life;
     }
 }

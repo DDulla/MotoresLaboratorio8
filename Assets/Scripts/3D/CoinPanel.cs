@@ -12,6 +12,6 @@ public class CoinPanel : MonoBehaviour
 
     private void UpdateCoins(int coins)
     {
-        coinsText.text = "Monedas: " + coins;
+        coinsText.text = "Coins: " + coins;
     }
 }
