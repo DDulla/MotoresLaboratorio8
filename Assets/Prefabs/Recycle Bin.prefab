@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4865039614314343939}
   - component: {fileID: 4754647459764680035}
   - component: {fileID: -3728263941208933387}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Recycle Bin
   m_TagString: Shape
   m_Icon: {fileID: 0}
@@ -171,4 +171,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d0b0e005f3e86d49a681992fe07fcc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectSprite: {fileID: 21300000, guid: 21f3f7cfce3eabf458574ce6c604ad2d, type: 3}

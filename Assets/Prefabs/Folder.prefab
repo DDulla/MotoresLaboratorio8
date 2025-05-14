@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8428407426475898448}
   - component: {fileID: 7601773292264546362}
   - component: {fileID: -6450838912555006652}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Folder
   m_TagString: Shape
   m_Icon: {fileID: 0}
@@ -171,4 +171,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d0b0e005f3e86d49a681992fe07fcc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectSprite: {fileID: 21300000, guid: 3d5ba6b9c80fe0f4081eb41093f20afb, type: 3}

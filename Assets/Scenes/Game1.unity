@@ -203,6 +203,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Internet Explorer
       objectReference: {fileID: 0}
+    - target: {fileID: 7521000328855470597, guid: 1e1923bb62f73354498741b98dc7c256, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -235,6 +239,10 @@ PrefabInstance:
     - target: {fileID: 1296418915599428968, guid: 9e567b3a6b12b3641bdd4a707837bb95, type: 3}
       propertyPath: m_Name
       value: Solitaire Spider
+      objectReference: {fileID: 0}
+    - target: {fileID: 1768866768062321263, guid: 9e567b3a6b12b3641bdd4a707837bb95, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3153808750043470427, guid: 9e567b3a6b12b3641bdd4a707837bb95, type: 3}
       propertyPath: m_LocalScale.x
@@ -543,6 +551,10 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: 0.08899164
       objectReference: {fileID: 0}
+    - target: {fileID: 3415363033726550131, guid: fbcaff22ddc34a94380de0f9f671b762, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4778385491613501572, guid: fbcaff22ddc34a94380de0f9f671b762, type: 3}
       propertyPath: m_Name
       value: Recycle Bin
@@ -748,7 +760,7 @@ GameObject:
   m_Component:
   - component: {fileID: 516885989}
   - component: {fileID: 516885988}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: BG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1128,6 +1140,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Purble Place
       objectReference: {fileID: 0}
+    - target: {fileID: 6850924026554998110, guid: 28939c87bdb9fa244b42b699857b833d, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1393,7 +1409,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1145574328}
   - component: {fileID: 1145574327}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: taskbar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1728,6 +1744,10 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: 0.19126755
       objectReference: {fileID: 0}
+    - target: {fileID: 2796563120184712006, guid: 72c502cd4744599409a78320c9465efb, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5605404693101275890, guid: 72c502cd4744599409a78320c9465efb, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.45131648
@@ -1990,7 +2010,7 @@ GameObject:
   - component: {fileID: 8715298898880786746}
   - component: {fileID: 8759728822718782184}
   - component: {fileID: 2473197865944007437}
-  m_Layer: 2
+  m_Layer: 8
   m_Name: Cursor
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -2063,7 +2083,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collisionLayer:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 8
   rayDistance: 5
   playerController: {fileID: 7025383009799854356}
 --- !u!61 &8759728822718782184

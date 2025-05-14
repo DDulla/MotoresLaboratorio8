@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2097340014843772157}
   - component: {fileID: 7922479641666010822}
   - component: {fileID: 8366346680466834891}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Solitaire Spider
   m_TagString: Color
   m_Icon: {fileID: 0}
@@ -171,4 +171,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bf11d3f49d90124dae5efbc29f1e36d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectColor: {r: 0.7169812, g: 0.19953722, b: 0.7128298, a: 0.9647059}

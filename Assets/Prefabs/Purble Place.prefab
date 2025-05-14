@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1224292274906127202}
   - component: {fileID: 2781632282351441717}
   - component: {fileID: -514008800437748517}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Purble Place
   m_TagString: Color
   m_Icon: {fileID: 0}
@@ -171,4 +171,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bf11d3f49d90124dae5efbc29f1e36d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectColor: {r: 0.2696244, g: 0.3317999, b: 0.7830189, a: 1}

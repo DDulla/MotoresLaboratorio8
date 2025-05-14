@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5552565429475469038}
   - component: {fileID: 7389080889366653733}
   - component: {fileID: -2516184762706788940}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Internet Explorer
   m_TagString: Shape
   m_Icon: {fileID: 0}
@@ -171,4 +171,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d0b0e005f3e86d49a681992fe07fcc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectSprite: {fileID: 21300000, guid: c0db5cb83f12943479cca5d4695e669c, type: 3}

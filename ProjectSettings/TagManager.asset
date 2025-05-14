@@ -3,18 +3,20 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Shape
+  - Color
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Game
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
+  - Foreground
+  - Background
+  - Player
+  - Ground
   - 
   - 
   - 
