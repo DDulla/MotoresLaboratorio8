@@ -1227,6 +1227,7 @@ GameObject:
   - component: {fileID: 931802756}
   - component: {fileID: 931802755}
   - component: {fileID: 931802757}
+  - component: {fileID: 931802758}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -1435,6 +1436,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &931802758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931802750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e7bbc794f73ff4458cf8d92638bfce3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorData: {fileID: 11400000, guid: ce89dabda94b3084185a66cb17436da4, type: 2}
+  meshRenderer: {fileID: 931802752}
 --- !u!1 &1049335210
 GameObject:
   m_ObjectHideFlags: 0
@@ -2971,6 +2986,7 @@ GameObject:
   - component: {fileID: 1911049415}
   - component: {fileID: 1911049414}
   - component: {fileID: 1911049413}
+  - component: {fileID: 1911049417}
   m_Layer: 0
   m_Name: Enemy1
   m_TagString: Enemy
@@ -3066,6 +3082,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1911049417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1911049412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e7bbc794f73ff4458cf8d92638bfce3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorData: {fileID: 11400000, guid: ff92a9a4fe92b8a4db7c31f2427b21bf, type: 2}
+  meshRenderer: {fileID: 1911049414}
 --- !u!1 &1944430832
 GameObject:
   m_ObjectHideFlags: 0
@@ -3349,6 +3379,7 @@ GameObject:
   - component: {fileID: 2070003376}
   - component: {fileID: 2070003375}
   - component: {fileID: 2070003374}
+  - component: {fileID: 2070003378}
   m_Layer: 0
   m_Name: Enemy2
   m_TagString: Enemy
@@ -3444,6 +3475,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2070003378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2070003373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e7bbc794f73ff4458cf8d92638bfce3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorData: {fileID: 11400000, guid: 70fbb6b967e9b8c4c8967fd91ca88ef6, type: 2}
+  meshRenderer: {fileID: 2070003375}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
